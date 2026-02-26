@@ -34,6 +34,7 @@ Only the `analyzer.py` module changes when switching between Claude / Gemini / O
 ---
 
 ## 📁 Project Structure
+```
 contract-review-bot/
 ├── app.py # Streamlit UI & main flow
 ├── analyzer.py # LLM prompt + response parsing
@@ -44,6 +45,7 @@ contract-review-bot/
 ├── .env.example
 ├── README.md
 
+```
 
 ---
 
@@ -53,11 +55,20 @@ contract-review-bot/
 ```bash
 git clone <your-repo-url>
 cd contract-review-bot
-
+```
+### 2️⃣ Create virtual environment
+```bash
 python -m venv venv
-
+```
+### Windows
+```bash
 venv\Scripts\activate
-
+```
+### 3️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
+### 5️⃣ Run the app
+```bash
 streamlit run app.py
+```
